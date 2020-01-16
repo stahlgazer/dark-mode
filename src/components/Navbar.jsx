@@ -4,6 +4,8 @@ import {useDarkMode} from '../hooks/useDarkMode';
 const Navbar = () => {
   const [darkMode, setDarkMode] = useDarkMode();
   console.log(darkMode, 'dark mode')
+  console.log(setDarkMode, 'set dark mode')
+  
   const toggleMode = e => {
     e.preventDefault();
     setDarkMode(!darkMode);
